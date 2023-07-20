@@ -28,7 +28,7 @@ nav related styles
   align-items: center;
 }
 
-.nav-title {
+.nav-title, .footer-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,6 +258,30 @@ games
 }
 
 /*---------------------------------------
+footer 
+-----------------------------------------*/
+.footer{
+  padding: 120px 550px 130px;
+  background: #0B0223;
+}
+
+.footer-title-text {
+  color: #fff;
+}
+.first-nav ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-nav li{
+  list-style: none;
+}
+
+.first-nav a {
+  text-decoration: none;
+}
+/*---------------------------------------
 mobile device 
 -----------------------------------------*/
 @media screen and (max-width: 576px) {
@@ -340,7 +364,10 @@ mobile device
   }
 }
 
-
+.footer {
+  width: 100%;
+  padding: 0px;
+}
 /*----------------------------------
 tablet device 
 ------------------------------------*/
