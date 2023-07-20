@@ -6,9 +6,22 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.btn-primary {
+  padding: 21px 40px;
+  border-radius: 48px;
+  background-color: #FF42A5;
+  border: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 
 /* header related styles */
-/* nav related styles */
+/*-------------------------------------------
+nav related styles 
+---------------------------------------------*/
 .nav {
   display: flex;
   justify-content: space-between;
@@ -69,31 +82,140 @@
   height: 70%;
 }
 
+/*-------------------------------------------
+play related styles 
+---------------------------------------------*/
+.play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.25rem;
+}
 
-/* -----------------------------------------------------------------------
+.play-content {
+  background: url(../images/Group\ 14.png);
+  /* fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%); */
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.play-content-title {
+  color: #0B0223;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+h1.play-content-bold-text {
+  font-size: 5.9rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto 24px;
+}
+
+.play-content-features {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-content-features p {
+  color: #534C64;
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 17px;
+}
+
+.play-content-features p:last-child {
+  margin-bottom: 41px;
+}
+
+button.sky {
+  background: #4EC5F7;
+}
+
+/* ---------------------------------------
 mobile device 
---------------------------------------------------------------------------*/
+-----------------------------------------*/
 @media screen and (max-width: 576px) {
-  .nav, .nav-menu{
+
+  .nav,
+  .nav-menu {
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .nav-menu .nav-menu-name{
+  .nav-menu .nav-menu-name {
     flex-direction: column;
   }
 
   .nav li img {
     height: 60%;
   }
+
+  .play {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .play-content {
+    width: 87%;
+    padding: 35px;
+  }
+
+  .play-content-bold-text{
+    font-size: 80%;
+  }
+
+  .play-image img {
+    width: 100%;
+  }
 }
 
-/*------------------------------------------------------------------------
+/*----------------------------------
 tablet device 
-------------------------------------------------------------------------*/
+------------------------------------*/
 @media screen and (min-width:576px) and (max-width:768px) {
-  .nav, .nav-menu{
+
+  .nav,
+  .nav-menu {
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .nav-menu .nav-menu-name {
+    flex-direction: column;
+  }
+
+  .play-image img {
+    width: 100%;
+  }
+
+  .play {
+    margin: 100px 0 0 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .play-content {
+    width: 94%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    text-align: center;
+  }
+
+  .play-content-features {
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
   }
 }
