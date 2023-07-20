@@ -17,10 +17,21 @@
 
 .nav-title {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
-.nav-title img {
+.nav-title-text {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.nav-title-text span {
+  color: #FF42A5;
+}
+
+.nav-title-img {
   width: 100%;
   height: 40px;
 }
@@ -33,6 +44,25 @@
 
 .nav-menu ul {
   display: flex;
+  gap: 2rem;
+
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+
+.nav-menu ul a,
+.follow-links>li {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #3C354F;
+}
+
+.follow-links>li {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.10);
+  padding: 17px 24px;
 }
 
 .nav li img {
