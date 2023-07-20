@@ -68,3 +68,32 @@
 .nav li img {
   height: 70%;
 }
+
+
+/* -----------------------------------------------------------------------
+mobile device 
+--------------------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .nav, .nav-menu{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu .nav-menu-name{
+    flex-direction: column;
+  }
+
+  .nav li img {
+    height: 60%;
+  }
+}
+
+/*------------------------------------------------------------------------
+tablet device 
+------------------------------------------------------------------------*/
+@media screen and (min-width:576px) and (max-width:768px) {
+  .nav, .nav-menu{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
